@@ -1,0 +1,28 @@
+# Environments
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Raw downloaded data (large; document its source in data/README.md instead)
+data/raw/*
+!data/raw/.gitkeep
+
+# DEAM audio + feature cache (1.3 GB; re-download, see data/README.md)
+data/deam/
+
+# Personal library of added songs
+data/user_songs.csv
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

@@ -1,0 +1,114 @@
+{
+  "features": [
+    "valence",
+    "energy",
+    "danceability",
+    "tempo"
+  ],
+  "classes": [
+    "Angry / Tense",
+    "Calm / Content",
+    "Happy / Excited",
+    "Sad"
+  ],
+  "sklearn_version": "1.9.1",
+  "catalog_sha256": "0a5f3abd4bf04f5e9cb90d28873bae113d6c6cdc584f1eed63701e96a86c0cbd",
+  "trained_at": "2026-10-09T17:32:28+00:00",
+  "test_size": 0.2,
+  "random_state": 42,
+  "metrics": {
+    "k": 5,
+    "n_train": 64848,
+    "n_test": 16213,
+    "test_accuracy": 0.9723678529575033,
+    "train_accuracy": 0.9859671848013817,
+    "majority_baseline": {
+      "label": "Happy / Excited",
+      "accuracy": 0.36353543452784803
+    },
+    "report": {
+      "Happy / Excited": {
+        "precision": 0.9783014070181386,
+        "recall": 0.9791313199864269,
+        "f1-score": 0.9787161875688968,
+        "support": 5894.0
+      },
+      "Calm / Content": {
+        "precision": 0.9422011084718923,
+        "recall": 0.9253499222395023,
+        "f1-score": 0.9336994899960769,
+        "support": 1286.0
+      },
+      "Angry / Tense": {
+        "precision": 0.9737268310239338,
+        "recall": 0.9753064167267483,
+        "f1-score": 0.9745159837910851,
+        "support": 5548.0
+      },
+      "Sad": {
+        "precision": 0.9710933028048082,
+        "recall": 0.9736011477761837,
+        "f1-score": 0.9723456082533314,
+        "support": 3485.0
+      },
+      "accuracy": 0.9723678529575033,
+      "macro avg": {
+        "precision": 0.9663306623296932,
+        "recall": 0.9633472016822153,
+        "f1-score": 0.9648193174023475,
+        "support": 16213.0
+      },
+      "weighted avg": {
+        "precision": 0.9723231812283539,
+        "recall": 0.9723678529575033,
+        "f1-score": 0.9723388562574373,
+        "support": 16213.0
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "Happy / Excited",
+        "Calm / Content",
+        "Angry / Tense",
+        "Sad"
+      ],
+      "matrix": [
+        [
+          5771,
+          42,
+          81,
+          0
+        ],
+        [
+          48,
+          1190,
+          2,
+          46
+        ],
+        [
+          80,
+          2,
+          5411,
+          55
+        ],
+        [
+          0,
+          29,
+          63,
+          3393
+        ]
+      ]
+    },
+    "boundary_analysis": {
+      "margin": 0.05,
+      "near_boundary": {
+        "n": 3346,
+        "accuracy": 0.8670053795576809
+      },
+      "far_from_boundary": {
+        "n": 12867,
+        "accuracy": 0.9997668454185125
+      }
+    }
+  }
+}

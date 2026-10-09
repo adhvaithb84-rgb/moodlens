@@ -1,0 +1,75 @@
+{
+  "feature_set": "both",
+  "clap_model": "laion/larger_clap_music",
+  "clap_revision": "a0b4534a14f58e20944452dff00a22a06ce629d1",
+  "dataset": "DEAM (MediaEval 2015-2017), static song-level averages, rescaled (x-1)/8",
+  "n_songs": 1802,
+  "evaluation": "5-fold cross-validation (KFold, shuffle, seed 42)",
+  "results": {
+    "old": {
+      "valence": {
+        "r2": -1.7012692428452039,
+        "mae": 0.2062324001608504,
+        "pearson": 0.2878241792980335
+      },
+      "energy": {
+        "r2": -2.176351727485455,
+        "mae": 0.24550425704775813,
+        "pearson": 0.2515013537836085
+      },
+      "mood_accuracy": 0.3834628190899001,
+      "majority_baseline": 0.3806881243063263,
+      "valence_side_accuracy": 0.516093229744728,
+      "energy_side_accuracy": 0.5205327413984462
+    },
+    "librosa": {
+      "valence": {
+        "r2": 0.4493949737494888,
+        "mae": 0.08661240446604969,
+        "pearson": 0.6706561004452303
+      },
+      "energy": {
+        "r2": 0.46349057016582484,
+        "mae": 0.09356814132217312,
+        "pearson": 0.6825936439570486
+      },
+      "mood_accuracy": 0.6209766925638179,
+      "majority_baseline": 0.3806881243063263,
+      "valence_side_accuracy": 0.7563817980022197,
+      "energy_side_accuracy": 0.7869034406215316
+    },
+    "clap": {
+      "valence": {
+        "r2": 0.29703949088641446,
+        "mae": 0.09882945155514308,
+        "pearson": 0.545225430803373
+      },
+      "energy": {
+        "r2": 0.29180123003788094,
+        "mae": 0.10921755201555285,
+        "pearson": 0.5405065611668766
+      },
+      "mood_accuracy": 0.5632630410654828,
+      "majority_baseline": 0.3806881243063263,
+      "valence_side_accuracy": 0.7153163152053275,
+      "energy_side_accuracy": 0.7203107658157603
+    },
+    "both": {
+      "valence": {
+        "r2": 0.4632219388406966,
+        "mae": 0.08522434178319162,
+        "pearson": 0.6806171897453006
+      },
+      "energy": {
+        "r2": 0.4841197598366821,
+        "mae": 0.09129694119404022,
+        "pearson": 0.6958636534841983
+      },
+      "mood_accuracy": 0.632630410654828,
+      "majority_baseline": 0.3806881243063263,
+      "valence_side_accuracy": 0.7624861265260822,
+      "energy_side_accuracy": 0.7913429522752498
+    }
+  },
+  "trained_at": "2026-10-09T18:58:57+00:00"
+}

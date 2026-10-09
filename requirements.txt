@@ -1,0 +1,13 @@
+# Runtime dependencies (this is what Streamlit Community Cloud installs).
+# Versions verified on Python 3.14.4 (Windows) on 2026-10-09.
+streamlit==1.65.0
+plotly==7.1.0
+pandas==3.0.6
+numpy==2.5.3
+scikit-learn==1.9.1
+joblib==1.6.0
+# Autocomplete search box
+streamlit-searchbox==0.1.24
+# Audio upload analysis
+librosa==1.0.0
+soundfile==0.14.0

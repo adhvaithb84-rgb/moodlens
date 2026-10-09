@@ -1,0 +1,14 @@
+{
+  "raw_rows": 114000,
+  "dropped_missing_identity": 1,
+  "merged_genre_duplicates": 24259,
+  "dropped_invalid_features": 157,
+  "dropped_same_song_versions": 8522,
+  "final_rows": 81061,
+  "mood_counts": {
+    "Happy / Excited": 29469,
+    "Calm / Content": 6429,
+    "Angry / Tense": 27740,
+    "Sad": 17423
+  }
+}
